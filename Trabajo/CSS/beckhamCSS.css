@@ -1,0 +1,61 @@
+
+#Animacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#BarraAmor{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 50px;
+    left: 25%;
+    height: 180px;
+    width: 50px;
+    background-color: #ffbfda;
+    padding: 10px;
+    box-shadow: 0px 0px 30px #D9328E, 0px 0px 15px #D9328E;
+}
+#Barra1,#Barra2,#Barra3,#Barra4,#Barra5,#Barra6,#Barra7{
+    width: 90%;
+    height: 10%;
+    margin-left: 5%;
+    margin-top: 13.5%;
+    border-radius: 30%;
+    border: 2px;
+    box-shadow: 0px 0px 30px #D9328E, 0px 0px 15px #D9328E;
+    background-color: #D9328E;
+}
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#Barra1{
+    animation: parpadeo 1s 1.4s  infinite;
+}
+#Barra2{
+    animation: parpadeo 1s 1.2s infinite;
+}
+#Barra3{
+    animation: parpadeo 1s 1s  infinite;
+}
+#Barra4{
+    animation: parpadeo 1s 0.8s infinite;
+}
+#Barra5{
+    animation: parpadeo 1s 0.6s infinite;
+}
+#Barra6{
+    animation: parpadeo 1s 0.4s infinite;
+}
+#Barra7{
+    animation: parpadeo 1s 0.2s infinite;
+}
+#Corazon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-top: 90px;
+    left: 70%;
+}

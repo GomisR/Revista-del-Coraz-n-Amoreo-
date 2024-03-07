@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakira</title>
+    <link rel="shortcut icon" href="./Imagenes/Imagenes/logosinfondocorazon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/cantantesCSS.css"/>
+    <link rel="stylesheet" href="./CSS/shakiraCSS.css"/>
+    <!-- FUENTES DE TIPOGRAFIA UTILIZADAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <script src="./Script/girarImagen.js"></script>
+</head>
+<body>
+    <header id="AnclaInicio">
+        <a href="index.html">
+            <img id="Logo" src="./Imagenes/Imagenes/logosinfondocorazonamarillo.png" alt="Logo">
+        </a>
+        <h1>SHAKIRA</h1>
+        <a id="BotonInicio" href="./inicioSesion.html">
+            <button id="AvatarBoton">
+                <img id="Avatar" src="./Imagenes/Imagenes/AvatarFondo.png"/>
+                <p>Iniciar Sesion</p>
+            </button>
+        </a>
+    </header>
+    <div id="Cuerpo">
+        <aside>
+                <img id="Shakira" src="./Imagenes/Cantantes/shakira.jpeg">
+                <div id="Descripcion">
+                    <p>
+                        Shakira es una cantante latinoamericana conocida en el mundo entero. 
+                        Su brillante carrera como cantante ha tenido dos picos relevantes. Actuación el el mundial de 2010 en Sudáfrica,
+                        donde conoció al futbolista español Gerard Pique y en 2023 con el éxito mundial de su canción “Loba”
+                    </p>
+            </div>
+        </aside>
+        <div id="Animacion">
+            <div id="ImagenAnimada">
+                <img class="ImagenGirar" src="./Imagenes/Parejas/ShakirayPique.jpeg" onclick="girar()"/>
+                <img class="Imagen2Girar" src="./Imagenes/Cantantes/shakira.jpeg" alt="Shakira" title="Shakira" onclick="girar()"/>
+            </div>
+            <div id="BarraAmor" class="ImagenAparecer" onclick="girar()">
+                <div id="Barra1"></div>
+                <div id="Barra2"></div>
+                <div id="Barra3"></div>
+                <div id="Barra4"></div>
+                <div id="Barra5"></div>
+                <div id="Barra6"></div>
+                <div id="Barra7"></div>
+            </div>
+            <img id="Corazon" class="ImagenAparecer" src="./Imagenes/Imagenes/corazon-roto.gif"/>
+        </div>
+        <aside>
+            <img id="Pique" src="./Imagenes/Cantantes/shakira.jpeg" alt="Beckham" title="LosBeckham"/>
+            <div id="Descripcion2">
+                <p>
+                    Actualmente esta relación se sigue manteniendo. 
+                    Hicieron una miniserie en netflix en la que hablan del complicado comienzo amoroso que tuvieron y 
+                    como consiguieron solucionar los problemas juntos. Tienen cuatro hijos: Brooklyn, Romeo, Cruz y Harper. 
+                    Mientras que su relación con David continúa siendo un ícono de la moda y el glamour.
+                </p>
+            </div>
+        </aside>
+        <nav>
+            <div id="Cantantes">
+                <h2>OTROS CANTANTES</h2>
+                <div id="FichasCantantes">
+                    <div id="PrimeraFila">
+                        <a href="./VictoriaBeckham.html">  
+                            <div class="ficha">
+                                <img id="Victoria" src="./Imagenes/Cantantes/VictoriaCirculo.jpg" />
+                                <h3>VICTORIA BECKHAM</h3>
+                            </div>   
+                        </a> 
+                        <a href="./Shakira.html">  
+                            <div class="ficha">
+                                <img id="Shakira" src="./Imagenes/Cantantes/ShakiraCirculo.jpg"/>
+                                <h3>SHAKIRA</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="SegundaFila">
+                        <a href="./BertinOsborne.html">  
+                            <div class="ficha">
+                                <img id="Bertin" src="./Imagenes/Cantantes/Bertincirculo.jpg"/>
+                                <h3>BERTIN OSBORNE</h3>
+                            </div>
+                        </a>
+                        <a href="./AnaObregon.html">  
+                            <div class="ficha">
+                                <img id="Ana" src="./Imagenes/Cantantes/AnaObregonCirculo.jpg" />
+                                <h3>ANA OBREGON</h3>
+                            </div>
+                        </a>   
+                    </div>  
+                </div>           
+            </div>
+        </nav>
+    </div>
+    <footer>
+        <div id="FooterLogo">
+            <a href="index.html">
+                <img id="FooterImagen" src="./Imagenes/Imagenes/logosinfondocorazonamarillo.png" alt="Logo">
+                <div id="FooterInicio" > 
+                    <a href="#AnclaInicio" class="enlaceFooter"> 
+                        <p>INICIO</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <div class="footerDivision" id="FooterHoroscopo">
+            <div class="footerDivision2" id="FooterHoroscopo2">
+                <dt class="tituloFooter">HORÓSCOPO</dt>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Aries.html">
+                            <p>Aries</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Tauro.html">
+                            <p>Turo</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Geminis.html">
+                            <p>Geminis</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Cancer.html">
+                            <p>Cancer</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Leo.html">
+                            <p>Leo</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Virgo.html">
+                            <p>Virgo</p>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footerDivision2" id="FooterHoroscopo3">
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Libra.html">
+                            <p>Libra</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Escorpio.html">
+                            <p>Escorpio</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Sagitario.html">
+                            <p>Sagitario</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Capricornio.html">
+                            <p>Capricornio</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Acuario.html">
+                            <p>Acuario</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Piscis.html">
+                            <p>Piscis</p>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footerDivision" >
+            <dl>
+                <dd class="tituloFooter">FUTBOLISTAS</dd>
+                <dd>
+                    <a class="enlaceFooter" href="CristianoRonaldo.html">
+                        <p>Cristiano Ronaldo</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Messi.html">
+                        <p>Lioinel Messi</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Beckham.html">
+                        <p>David Beckham</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Pique.html">
+                        <p>Gerard Pique</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="SergioRamos.html">
+                        <p>Sergio Ramos</p>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div class="footerDivision">
+            <dl>
+                <dd class="tituloFooter">CANTANTES</dd>
+                <dd>
+                    <a class="enlaceFooter" href="VictoriaBeckham.html">
+                        <p>Victoria Beckham</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="AnaObregon.html">
+                        <p>Ana Obregon</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Shakira.html">
+                        <p>Shakira</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="BertinOsborne.html">
+                        <p>Bertin Osborne</p>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div id="Copyright">
+            <p class="tituloFooter">
+                © 2001-2024, AMOREO S.L.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

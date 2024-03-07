@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi</title>
+    <link rel="shortcut icon" href="./Imagenes/Imagenes/logosinfondocorazon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/futbolistasCSS.css"/>
+    <link rel="stylesheet" href="./CSS/messiCSS.css"/>
+    <!-- FUENTES DE TIPOGRAFIA UTILIZADAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <script src="./Script/girarImagen.js"></script>
+</head>
+<body>
+    <header id="AnclaInicio">
+        <a href="index.html">
+            <img id="Logo" src="./Imagenes/Imagenes/logosinfondocorazonamarillo.png" alt="Logo">
+        </a>
+        <h1>LIONEL MESSI</h1>
+        <a id="BotonInicio" href="./inicioSesion.html">
+            <button id="AvatarBoton">
+                <img id="Avatar" src="./Imagenes/Imagenes/AvatarFondo.png"/>
+                <p>Iniciar Sesion</p>
+            </button>
+        </a>
+    </header>
+    <div id="Cuerpo">
+        <aside>
+            <img id="Messi" src="./Imagenes/Futbolistas/messiLlorando.jpeg">
+            <div id="Descripcion">
+                <p>
+                    Messi ha sido uno de los mejores jugadores de la historia del fútbol, sino el mejor, desde una temprana edad. 
+                    Como es lógico era la estrella de la época dorada del Barcelona. Esto significa poder y fama, 
+                    a parte de una gran cantidad de cámaras siempre pendiente de él. Ha sido un jugador, pese a su nivel futbolístico, 
+                    que nunca ha tenido gran cantidad de polémicas fuera del campo. 
+                </p>
+            </div>
+        </aside>
+        <div id="Animacion">
+            <div id="ImagenAnimada">
+                <img class="ImagenGirar" src="./Imagenes/Parejas/messiantonela.jpeg" onclick="girar()"/>
+                <img class="Imagen2Girar" src="./Imagenes/Parejas/messiantonela.jpeg" alt="Messi" title="AntonellayMessi" onclick="girar()"/>
+            </div>
+            <div id="BarraAmor" class="ImagenAparecer" onclick="girar()">
+                <div id="Barra1"></div>
+                <div id="Barra2"></div>
+                <div id="Barra3"></div>
+                <div id="Barra4"></div>
+                <div id="Barra5"></div>
+                <div id="Barra6"></div>
+                <div id="Barra7"></div>
+            </div>
+            <img id="Corazon" class="ImagenAparecer"src="./Imagenes/Imagenes/corazonLatiendo.gif"/>
+        </div>
+        <aside>
+            <img id="Antonella" src="./Imagenes/Parejas/messiantonela.jpeg" alt="Messi" title="MessiAntonella"/>
+            <div id="Descripcion2">
+                <p>
+                    Actualmente sigue manteniendo una relación estable con su mujer, Antonella, a la cual conocía desde muy pequeños. 
+                    Pese a algún bache que ha tenido la relación, debido a la cantidad de prensa que sigue a Messi, siguen siendo una familia con 3 hijos.
+                </p>
+            </div>
+        </aside>
+        <nav>
+            <div id="Futbolistas">
+                <h2>OTROS FUTBOLISTAS</h2>
+                <div id="FichasFutbolistas">
+                    <div id="PrimeraFila">
+                        <a href="./CristianoRonaldo.html">  
+                            <div class="ficha">
+                                <img id="Cr7" src="./Imagenes/Futbolistas/CristianoCirculo.jpg.jpg"/>
+                                <h3>CRISTIANO RONALDO</h3>
+                            </div>
+                        </a>
+                        <a href="./Pique.html">  
+                            <div class="ficha">
+                                <img id="Pique" src="./Imagenes/Futbolistas/PiqueCirculo.jpg" usemap="#piquemap"/>
+                                <h3>GERARD PIQUE</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="SegundaFila">
+                        <a href="./Beckham.html">  
+                            <div class="ficha">
+                                <img id="Beckham" src="./Imagenes/Futbolistas/BeckhamGrande.jpg" usemap="#beckhammap"/>
+                                <h3>DAVID BECKHAM</h3>
+                            </div>
+                        </a>
+                        <a href="./SergioRamos.html">  
+                            <div class="ficha">
+                                <img id="Sergio" src="./Imagenes/Futbolistas/RamosCirculo.jpg" usemap="#ramosmap"/>
+                                <h3>SERGIO RAMOS</h3>
+                            </div>   
+                        </a>    
+                    </div>  
+                </div>      
+            </div>
+        </nav>
+    </div>
+    <footer>
+        <div id="FooterLogo">
+            <a href="index.html">
+                <img id="FooterImagen" src="./Imagenes/Imagenes/logosinfondocorazonamarillo.png" alt="Logo">
+                <div id="FooterInicio" > 
+                    <a href="#AnclaInicio" class="enlaceFooter"> 
+                        <p>INICIO</p>
+                    </a>
+                </div>
+            </a>
+        </div>
+        <div class="footerDivision" id="FooterHoroscopo">
+            <div class="footerDivision2" id="FooterHoroscopo2">
+                <dt class="tituloFooter">HORÓSCOPO</dt>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Aries.html">
+                            <p>Aries</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Tauro.html">
+                            <p>Turo</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Geminis.html">
+                            <p>Geminis</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Cancer.html">
+                            <p>Cancer</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Leo.html">
+                            <p>Leo</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Virgo.html">
+                            <p>Virgo</p>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footerDivision2" id="FooterHoroscopo3">
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Libra.html">
+                            <p>Libra</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Escorpio.html">
+                            <p>Escorpio</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Sagitario.html">
+                            <p>Sagitario</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Capricornio.html">
+                            <p>Capricornio</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Acuario.html">
+                            <p>Acuario</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dd>
+                        <a class="enlaceFooter" href="Piscis.html">
+                            <p>Piscis</p>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footerDivision" >
+            <dl>
+                <dd class="tituloFooter">FUTBOLISTAS</dd>
+                <dd>
+                    <a class="enlaceFooter" href="CristianoRonaldo.html">
+                        <p>Cristiano Ronaldo</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Messi.html">
+                        <p>Lioinel Messi</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Beckham.html">
+                        <p>David Beckham</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Pique.html">
+                        <p>Gerard Pique</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="SergioRamos.html">
+                        <p>Sergio Ramos</p>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div class="footerDivision">
+            <dl>
+                <dd class="tituloFooter">CANTANTES</dd>
+                <dd>
+                    <a class="enlaceFooter" href="VictoriaBeckham.html">
+                        <p>Victoria Beckham</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="AnaObregon.html">
+                        <p>Ana Obregon</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="Shakira.html">
+                        <p>Shakira</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dd>
+                    <a class="enlaceFooter" href="BertinOsborne.html">
+                        <p>Bertin Osborne</p>
+                    </a>
+                </dd>
+            </dl>
+        </div>
+        <div id="Copyright">
+            <p class="tituloFooter">
+                © 2001-2024, AMOREO S.L.
+            </p>
+        </div>
+    </footer>
+    <script src="./Script/girarImagen.js"></script>
+</body>
+</html>

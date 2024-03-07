@@ -1,0 +1,325 @@
+/*GENERAL*/
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #f2dde4;
+    text-align: justify;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: "Oooh Baby", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 400%;
+    color: #ffbfda;
+    text-shadow: 6px 6px #32a9d9;
+    text-shadow: 0px 0px 30px #32a9d9, 0px 0px 15px #32a9d9, 3px 3px #32a9d9;
+}
+h2,h3{
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    color: #32a9d9;
+}
+h2{
+    font-size: xx-large;
+}
+p{
+    font-family: "Barlow", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+}
+/* HEADER */
+header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9328E;
+}
+#Logo{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    height: 25%;
+    width: 10%;
+    transition: 1s;
+}
+#Logo:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/*BOTON INICIO DE SESION*/
+#BotonInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    background-color: linear-gradient(
+        150deg,
+        #eb51a6,
+        #ffbfda
+    );
+}
+#AvatarBoton{
+    position: absolute;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 12%;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+#AvatarBoton:hover {
+    background: none;
+    background-image: linear-gradient(
+        150deg,
+        #eb51a6,
+        #ffbfda
+    );
+    border: 3px;
+    border-style: solid;
+    border-color: #32a9d9;
+    transition: 0.2s;
+}
+button:active{
+    transform: scale(0.9);
+
+}
+#Avatar{
+    height: 90%;
+    width: 35%;
+}
+/*TITULO*/
+header > h1{
+    text-shadow: #dedbdd;
+    
+}
+/*BOTONES*/
+button{  
+    background-image: linear-gradient(
+        150deg,
+        #eb51a6,
+        #ffbfda
+    );
+    border-radius: 8px;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3S;
+}
+button span{
+    background-color: #f2dde4;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3S;
+}
+button:hover{
+    color: #32a9d9;
+    transform: scale(1.1);
+}
+button:hover span{
+    background: none;
+}
+button:active{
+    transform: scale(0.9);
+}
+/*CUERPO*/
+#Cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*ASIDE*/
+aside{
+    width: 85%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+    background-color: #ffbfda;
+}
+#Descripcion{
+    margin-left: 20px;
+    margin-right: 5%;
+}
+#Descripcion2{
+    margin-left: 20px;
+    margin-right: 5%;
+}
+
+/*OTROS FUTBOLISTAS*/
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#Futbolistas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background-color: #ffbfda;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#FichasFutbolistas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#PrimeraFila,#SegundaFila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+/*FICHAS*/
+.ficha{
+    padding: 5px;
+    width: 275px;
+    height: 100%;
+    background-color: #f5f5dc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform .5s;
+}
+
+.ficha > h3{
+    color: #32a9d9;
+}
+.ficha:hover{
+    box-shadow: 0 0.1rem 0.6rem #32a9d9;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/*IMAGEN GIRATORIA*/
+#ImagenAnimada{
+    margin-top: 50px;
+}
+.ImagenGirar {
+    padding: 10px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: opacity 2s, transform 1s;
+}
+
+.ImagenGirar.visible {
+    opacity: 0;
+    transform: rotateY(1440deg);
+}
+
+.Imagen2Girar {
+    padding: 10px;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -215px;
+    border-radius: 100%;
+    display: none;
+    opacity: 0;
+    transform: rotateY(0deg);
+    transition: opacity 2s, transform 1s
+}
+
+.Imagen2Girar.ver {
+    opacity: 1;
+    display: block;
+    filter: none; /* Quitamos el desenfoque cuando se aplica la clase "ver" */
+}
+
+.ImagenAparecer{
+    opacity: 0;
+    transition: opacity 2s, transform 1s
+}
+.ImagenAparecer.ver{
+    opacity: 1;
+    display: block;
+    filter: none;
+}
+.ImagenGirar{
+    cursor: pointer;
+}
+.ImagenGirar:hover{
+    transform: scale(1.2);
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #D9328E;
+}
+#FooterImagen{
+    width: 100px;
+    height: 100px;
+    transition: 0.8s;
+}
+#FooterImagen:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+#FooterInicio{
+    position: relative;
+    left: 25%;
+}
+#FooterHoroscopo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+dt{
+    position: relative;
+    right: -60%;
+}
+.enlaceFooter{
+    color: white;
+    transition: 0.9s;
+}
+.enlaceFooter:hover >p{
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: bold;
+    color: #32a9d9;
+}
+.tituloFooter{
+    color: #32a9d9;
+    font-weight: bold;
+}
